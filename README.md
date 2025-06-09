@@ -2,20 +2,6 @@
 
 This project demonstrates how to build a simple, serverless note-taking application using Pulumi to define and deploy infrastructure on AWS. The application consists of a RESTful API built with API Gateway and a Lambda function that saves and retrieves notes from a DynamoDB table. The entire project, including infrastructure and application code, is written in TypeScript.
 
-## Architecture
-
-The architecture is straightforward and efficient, leveraging managed AWS services for a scalable, low-maintenance solution.
-
-```mermaid
-graph TD
-    A[User / Client] -->|HTTPS Request| B(AWS API Gateway);
-    B -->|POST /notes| C{Notes Lambda Function};
-    B -->|GET /notes/{id}| C;
-    C -->|Save/Get Data| D[(AWS DynamoDB Table)];
-```
-
----
-
 ## Features
 
 - **Infrastructure as Code**: All AWS resources are defined declaratively using Pulumi and TypeScript.
