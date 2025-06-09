@@ -1,0 +1,3 @@
+name: pulumi-notes-app
+runtime: nodejs
+description: A serverless note-taking app with Pulumi and TypeScript
